@@ -1,0 +1,32 @@
+{
+  "name": "ark4ne/xl-reader",
+  "description": "High performance Excel Reader (CSV, TSV, XLSX)",
+  "keywords": ["xlsx", "csv", "reader","low-memory", "performance"],
+  "minimum-stability": "dev",
+  "license": "MIT",
+  "authors": [
+    {
+      "name": "Ark4ne (Guillaume Allegret)",
+      "email": "gui.allegret@gmail.com"
+    }
+  ],
+  "require": {
+    "php": ">=7.0",
+    "ext-xmlreader": "*",
+    "ext-zip": "*"
+  },
+  "require-dev": {
+    "phpunit/phpunit": "^6.0 | ^7.0 | ^8.0 | ^9.0",
+    "satooshi/php-coveralls": "~1.0"
+  },
+  "autoload": {
+    "psr-4": {
+      "Ark4ne\\XlReader\\": "src/"
+    }
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Test\\": "tests/Test"
+    }
+  }
+}
