@@ -1,7 +1,5 @@
 language: php
 
-sudo: required
-
 php:
   - 7.0
   - 7.1
@@ -10,7 +8,6 @@ php:
   - 7.4
 
 install:
-  - composer self-update
   - travis_retry composer install --no-interaction --prefer-source --dev
 
 before_script:
