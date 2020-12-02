@@ -8,6 +8,7 @@ php:
   - 7.4
 
 install:
+  - composer self-update --rollback
   - travis_retry composer install --no-interaction --prefer-source --dev
 
 before_script:
