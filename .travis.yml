@@ -1,0 +1,27 @@
+language: php
+
+sudo: required
+
+php:
+  - 7.0
+  - 7.1
+  - 7.2
+  - 7.3
+  - 7.4
+
+install:
+  - composer self-update
+  - travis_retry composer install --no-interaction --prefer-source --dev
+
+before_script:
+  - composer dump-autoload
+
+script:
+  - mkdir -p build/logs
+  - phpunit --configuration ./phpunit.xml --coverage-clover build/logs/clover.xml
+
+after_script:
+  - php vendor/bin/coveralls -v
+
+after_success:
+  - coveralls
