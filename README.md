@@ -1,6 +1,7 @@
 # xl-reader
-[![Build Status](https://travis-ci.org/Ark4ne/xl-reader.svg?branch=main)](https://travis-ci.org/Ark4ne/xl-reader)
-[![Coverage Status](https://coveralls.io/repos/github/Ark4ne/xl-reader/badge.svg)](https://coveralls.io/github/Ark4ne/xl-reader)
+![Build Status](https://github.com/Ark4ne/laravel-json-api/actions/workflows/php.yml/badge.svg)
+[![Coverage Status](https://codecov.io/gh/Ark4ne/xl-reader/branch/main/graph/badge.svg?token=SI50NJ20CE)](https://codecov.io/gh/Ark4ne/xl-reader)
+
 
 High performance excel reader, with very low memory consumption.
 
