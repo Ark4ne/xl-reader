@@ -115,6 +115,7 @@ class CsvReader implements IReader
                 $row = fgetcsv($ptr, 0, $this->delimiter, $this->enclosure, $this->escape);
 
                 if ($row) {
+                    $row = array_map("utf8_encode", $row);
                     yield $row_index++ => $this->readRow($row);
                 }
             } while ($end >= $row_index && $row);
