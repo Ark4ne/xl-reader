@@ -91,7 +91,7 @@ class CsvReader implements IReader
      *
      * @return \Generator
      */
-    public function read(int $start = 1, int $end = null): Generator
+    public function read(int $start = 1, null|int $end = null): Generator
     {
         if ($start <= 0) {
             throw new BadMethodCallException('$start must be greater then 0.');
